@@ -1,0 +1,22 @@
+<%- include('partials/header'); -%>
+
+<div class="blog-list">
+    <article class="blog-details">
+        <% if(blog.username != user.username) { %>
+            <div class="btns">
+                <button >Follow</button>
+                <button ><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+            </div>
+        <% } %>
+        <h1><%= blog.title %></h1>
+        <p>Written by:<span style="color: #4a1b4e; font-weight:900"><%= blog.username %></span></p>
+        <p>Category:<span style="color: #2768da; font-weight:900"><%= blog.category %></span></p>
+        <div class="blog-body">
+            <%= blog.body %>
+        </div>
+    </article>
+          
+</div>
+
+
+<%- include('partials/footer'); -%>

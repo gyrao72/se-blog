@@ -1,0 +1,22 @@
+<%- include('partials/header'); -%>
+
+<div class="blog-list">
+    <h2 class="mainHeader" >All Blogs</h2>
+    <% if(blogs.length > 0) {  %>
+        <% blogs.forEach(blog => { %>
+        <div class="blog-preview">
+            <a href="/blogs/<%= blog._id %>">
+                <h2><%= blog.title %></h2>
+                <small>Created on:<%= blog.createdAt.toString().substring(4,15) %> </small>
+                <p>Written by:<span style="color: #4a1b4e; font-weight:900"><%= blog.username %></span></p>
+                <p>Category:<span style="color: #2768da; font-weight:900"><%= blog.category %></span></p>
+            </a>
+        </div>
+        <% }) %> 
+    <% } else { %>
+        <p style="font-size: 25px;">There are no Blogs to display...</p>
+    <% } %>    
+</div>
+
+
+<%- include('partials/footer'); -%>

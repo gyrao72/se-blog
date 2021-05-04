@@ -1,0 +1,26 @@
+<%- include('partials/header'); -%>
+
+<form class="create" action="/blogs/create" method="POST" >
+    <h2>Create Blog</h2>
+    <input type="hidden" name="userID" value=<%= user._id %> />
+    <input type="hidden" name="username" value=<%= user.username %> />
+    <label for="title">Title</label>
+    <input type="text" name="title" autocomplete="off" required />
+    <label for="body">Body</label>
+    <textarea name="body" rows="5"  required ></textarea>
+    <label>Category:</label>
+    <select name="category">
+        <option value="science">Science</option>
+        <option value="technology">Technology</option>
+        <option value="politics">Politics</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="health">Health</option>
+    </select>
+    <button type="submit">Create</button>
+</form>
+
+
+
+
+
+<%- include('partials/footer'); -%>

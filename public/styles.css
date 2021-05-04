@@ -1,0 +1,292 @@
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Mulish:wght@300&family=Nunito:wght@300&display=swap"');
+
+*::selection{
+  background-color: #be79ce;
+  color:white;
+}
+
+body{
+  margin: 20px 40px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  background: #fafafa;
+}
+h1, h2, h3, h4, ul, li, a, p, input, label, button, div, footer{
+  margin: 0;
+  padding: 0;
+  font-family:'Nunito', sans-serif;
+  color: #444;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 120px;
+}
+nav ul{
+  display: flex;
+  align-items: center;
+}
+nav li{
+  margin-left: 20px;
+}
+nav li a{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8em;
+  display: block;
+  padding: 10px 16px;
+  letter-spacing: 2px;
+}
+.btn{
+  border-radius: 36px;
+  background: #FEE996;
+}
+form h2{
+  font-size: 2.4em;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+form{
+  width: 360px;
+  margin: 0 auto;
+  padding: 30px;
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  background: white;
+}
+.create {
+  margin-top: -70px;
+  width: 600px;
+}
+input{
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid  rgb(101, 98, 98);
+  font-size: 1em;
+  width: 100%;
+}
+textarea{
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid rgb(101, 98, 98);
+  font-size: 1em;
+  width: 100%;
+}
+select{
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid rgb(101, 98, 98);
+  font-size: 1em;
+  width: 100%;
+}
+label{
+  display: block;
+  margin: 20px 0 10px;
+}
+button{
+  margin-top: 30px;
+  border-radius: 36px;
+  background: #FEE996;
+  border:0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8em;
+  display: block;
+  padding: 10px 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.error{
+  color: #ff0099;
+  margin: 10px 2px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+header{
+  display: flex;
+  align-items: center;
+}
+header img{
+  width: 250px;
+  margin-right: 40px;
+}
+header h2{
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+header h3{
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  color: #999;
+}
+header .btn{
+  margin-top: 20px;
+  padding: 12px 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 0.8em;
+}
+
+/* blog previews / list */
+
+.mainHeader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.blog-preview {
+  background-color: #f4f1f5;
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-radius: 5px;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px #c25dd8;
+}
+.blog-preview h2 {
+  font-size: 2rem;
+  color: #f5ab66;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.blog-preview small {
+  font-size: 12px;
+}
+.blog-details p,.blog-preview p {
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.blog-preview a{
+  text-decoration: none;
+}
+
+
+/* blog details page */
+.blog-details{
+  width: 80%;
+  margin: auto;
+  background-color: #f4f1f5;
+  border-radius:10px ;
+  padding: 20px;
+}
+.blog-details h1 {
+  font-size: 3rem;
+  color: #f5ab66;
+  margin-top:10px;
+  text-transform: capitalize;
+}
+
+.blog-details .blog-body{
+  margin: 20px 0;
+  text-transform: capitalize;
+}
+
+.blog-details button {
+  background: #FEE996;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+footer{
+  text-align: center;
+  margin-top: 120px;
+  color: #aaa;
+}
+
+.btns{
+  display: flex;
+  margin-top: -20px;
+}
+.btns button{
+  font-size: 0.8rem;
+  margin-right: 30px;
+  background-color: #444;
+  color: aliceblue;
+}
+.liDisp a:hover{
+  transition: .6s;
+  color: #d000ff;
+}
+#liDisp a:hover{
+  transition: .6s;
+  color: #ff0000;
+}
+
+
+@media screen and (max-width: 485px){
+    h1{
+      font-size: 1.5rem;
+    }
+    nav li{
+      font-size: 1rem;
+      margin-left: 10px;
+    }
+    nav li a{
+      font-size: 0.6rem;
+      display: block;
+      padding: 10px 0 10px 5px;
+    }
+    header{
+      display: inline-block;
+      text-align: center;
+    }
+    header img{
+      width: 250px;
+      margin-bottom: 30px;
+    }
+    header h2{
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    header h3{
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      margin-left: 2px;
+      color: #999;
+    }
+    form{
+      width: 98%;
+      padding: 5px;
+    }
+    form h2{
+      font-size: 2.5rem;
+    }
+
+     #userEmail{
+       display: none;
+     }
+     .blog-details{
+      width: 95%;
+    }
+    .blog-details h1 {
+      font-size: 2rem;
+      color: #f5ab66;
+      text-transform: capitalize;
+    }
+    
+    .blog-details div{
+      margin: 10px 0;
+      text-transform: capitalize;
+    }
+      
+}
