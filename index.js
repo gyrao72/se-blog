@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.set('view engine','ejs');
 
-const dbURI = process.env.DB_URI;
+const dbURI = 'mongodb+srv://gyrao:Allen123@nodejs-base.a6ug8.gcp.mongodb.net/se-project?retryWrites=true&w=majority';
 
 mongoose.connect(dbURI,{useNewUrlParser:true,useUnifiedTopology:true})
     .then((result) =>{
